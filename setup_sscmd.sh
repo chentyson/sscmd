@@ -35,4 +35,6 @@ pip install pytz
 #install django
 pip install django
 
-
+#install supervisor
+pip install supervisor
+cp supervisord.conf /etc/
