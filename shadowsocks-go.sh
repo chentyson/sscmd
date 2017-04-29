@@ -239,15 +239,27 @@ config_shadowsocks(){
     fi
     cat > /etc/shadowsocks/config.json<<-EOF
 {
-    "server":"0.0.0.0",
-    "server_port":${shadowsocksport},
-    "local_port":1080,
-    "password":"${shadowsockspwd}",
-    "method":"aes-256-cfb",
-    "timeout":600
+    "fast_open": true,
+    "local_address": "127.0.0.1",
+    "local_port": 1080,
+    "method": "aes-256-cfb",
+    "port_password": {
+        "11250": "test"
+    },
+    "server": "0.0.0.0",
+    "timeout": 60
 }
 EOF
 }
+
+#{
+#    "server":"0.0.0.0",
+#    "server_port":${shadowsocksport},
+#    "local_port":1080,
+#    "password":"${shadowsockspwd}",
+#    "method":"aes-256-cfb",
+#    "timeout":600
+#}
 
 # Firewall set
 firewall_set(){
