@@ -43,6 +43,7 @@ pip install django
 
 #install supervisor
 pip install supervisor
-cp supervisord.conf /etc/
-supervisord -c /etc/supervisord.conf
+cp supervisord.conf /etc/ -f
+#supervisord -c /etc/supervisord.conf
+cp supervisrd.service /etc/systemd/system/ -f
 #supervisorctl restart ss
