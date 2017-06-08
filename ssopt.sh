@@ -65,3 +65,11 @@ sed -i '/net.ipv4.tcp_congestion_control = hybla/d' /etc/sysctl.conf
 sed -i '$a net.ipv4.tcp_congestion_control = hybla' /etc/sysctl.conf
 
 sysctl -p
+
+#install server-speeder
+#replace centos7 kernal
+rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force
+
+#now need reboot
+read -p "Now,need to reboot! run install_speeder after reboot. ok, Press any key to reboot..." aa
+reboot
