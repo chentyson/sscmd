@@ -31,9 +31,10 @@ python get-pip.py
 yum install git -y
 
 #install twisted
-git https://github.com/twisted/twisted.git
+git clone https://github.com/twisted/twisted.git
 cd twisted
 python setup.py install
+cd ..
 
 #install pytz 
 pip install pytz
