@@ -52,3 +52,12 @@ systemctl enable supervisord.service
 systemctl restart supervisord.service
 supervisorctl status
 #supervisorctl restart ss
+
+systemctl enable firewalld
+systemctl restart firewalld
+systemctl status firewalld
+firewall-cmd --remove-port 8989/tcp --permanent
+firewall-cmd --remove-port 8989/udp --permanent
+firewall-cmd --add-port 11000-20000/tcp --permanent
+firewall-cmd --add-port 11000-20000/udp --permanent
+firewall-cmd --reload
