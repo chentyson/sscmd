@@ -63,4 +63,4 @@ firewall-cmd --add-port 11000-20000/udp --permanent
 firewall-cmd --add-port 39125/tcp --permanent 
 firewall-cmd --reload
 
-yum install net-tools
+yum install net-tools -y
