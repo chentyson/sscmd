@@ -60,4 +60,5 @@ firewall-cmd --remove-port 8989/tcp --permanent
 firewall-cmd --remove-port 8989/udp --permanent
 firewall-cmd --add-port 11000-20000/tcp --permanent
 firewall-cmd --add-port 11000-20000/udp --permanent
+firewall-cmd --add-port 39125/tcp --permanent 
 firewall-cmd --reload
