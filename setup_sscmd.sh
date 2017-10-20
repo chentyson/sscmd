@@ -53,6 +53,7 @@ systemctl restart supervisord.service
 supervisorctl status
 #supervisorctl restart ss
 
+#setup firewalld
 systemctl enable firewalld
 systemctl restart firewalld
 systemctl status firewalld
@@ -64,3 +65,4 @@ firewall-cmd --add-port 39125/tcp --permanent
 firewall-cmd --reload
 
 yum install net-tools -y
+yum install screen -y
