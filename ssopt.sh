@@ -68,6 +68,10 @@ sysctl -p
 
 #install server-speeder
 #replace centos7 kernal
+#update linux-firmware
+yum update
+yum install linux-firmware.noarch -y
+#install new kernal
 rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force
 
 #now need reboot
