@@ -41,7 +41,7 @@ cd ..
 pip install pytz
 
 #install django
-pip install django
+pip install django==1.9.4
 
 #install supervisor
 pip install supervisor
