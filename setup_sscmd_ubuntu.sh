@@ -18,8 +18,9 @@ apt -y install libsqlite3-dev
 
 #install new python
 cd Python-2.7.13
-./configure --with-readline --with-zlib=/usr/include --enable-unicode=ucs4
+apt install gcc
 apt install make -y
+./configure --with-readline --with-zlib=/usr/include --enable-unicode=ucs4
 make
 make install
 cd ..
@@ -42,7 +43,7 @@ cd ..
 pip install pytz
 
 #install django
-pip install django
+pip install django==1.9.4
 
 #install supervisor
 pip install supervisor
@@ -56,16 +57,17 @@ supervisorctl status
 
 #setup firewalld
 apt install firewalld -y
-systemctl enable firewalld
-systemctl restart firewalld
-systemctl status firewalld
+systemctl stop firewalld
 firewall-cmd --add-port 22/tcp --permanent
 firewall-cmd --remove-port 8989/tcp --permanent
 firewall-cmd --remove-port 8989/udp --permanent
 firewall-cmd --add-port 11000-20000/tcp --permanent
 firewall-cmd --add-port 11000-20000/udp --permanent
 firewall-cmd --add-port 39125/tcp --permanent 
-firewall-cmd --reload
+systemctl enable firewalld
+systemctl restart firewalld
+systemctl status firewalld
+#firewall-cmd --reload
 
 #yum install net-tools -y
 apt install screen -y
