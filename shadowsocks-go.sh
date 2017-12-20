@@ -191,18 +191,19 @@ pre_install(){
 download_files(){
     cd ${cur_dir}
     if is_64bit; then
-        if ! wget -c http://dl.teddysun.com/shadowsocks/shadowsocks-server-linux64-1.2.1.gz; then
-            echo "Failed to download shadowsocks-server-linux64-1.2.1.gz"
-            exit 1
-        fi
-        gzip -d shadowsocks-server-linux64-1.2.1.gz
-        if [ $? -eq 0 ]; then
-            echo "Decompress shadowsocks-server-linux64-1.2.1.gz success"
-        else
-            echo "Decompress shadowsocks-server-linux64-1.2.1.gz failed"
-            exit 1
-        fi
-        mv -f shadowsocks-server-linux64-1.2.1 /usr/bin/shadowsocks-server
+        #if ! wget -c http://dl.teddysun.com/shadowsocks/shadowsocks-server-linux64-1.2.1.gz; then
+        #    echo "Failed to download shadowsocks-server-linux64-1.2.1.gz"
+        #    exit 1
+        #fi
+        #gzip -d shadowsocks-server-linux64-1.2.1.gz
+        #if [ $? -eq 0 ]; then
+        #    echo "Decompress shadowsocks-server-linux64-1.2.1.gz success"
+        #else
+        #    echo "Decompress shadowsocks-server-linux64-1.2.1.gz failed"
+        #    exit 1
+        #fi
+        #mv -f shadowsocks-server-linux64-1.2.1 /usr/bin/shadowsocks-server
+        mv -f ./shadowsocks-server /usr/bin/shadowsocks-server
     else
         if ! wget -c http://dl.teddysun.com/shadowsocks/shadowsocks-server-linux32-1.2.1.gz; then
             echo "Failed to download shadowsocks-server-linux32-1.2.1.gz"
