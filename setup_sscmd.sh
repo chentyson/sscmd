@@ -66,3 +66,5 @@ firewall-cmd --reload
 
 yum install net-tools -y
 yum install screen -y
+
+timedatectl set-timezone 'Asia/Shanghai'
