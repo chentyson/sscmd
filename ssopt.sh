@@ -1,8 +1,8 @@
 #update limits
 sed -i '/soft nofile 51200/d' /etc/security/limits.conf
-sed -i '$a soft nofile 51200' /etc/security/limits.conf 
+sed -i '$a * soft nofile 51200' /etc/security/limits.conf 
 sed -i '/hard nofile 51200/d' /etc/security/limits.conf
-sed -i '$a hard nofile 51200' /etc/security/limits.conf 
+sed -i '$a * hard nofile 51200' /etc/security/limits.conf 
 
 #setup ulimit
 ulimit -n 51200
