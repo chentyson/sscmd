@@ -73,7 +73,7 @@ yum update
 yum install linux-firmware.noarch -y
 #install new kernal
 rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force
-
+echo "install kernal done!"
 #now need reboot
-read -p "Now,need to reboot! run install_speeder after reboot. ok, Press any key to reboot..." aa
+#read -p "Now,need to reboot! run install_speeder after reboot. ok, Press any key to reboot..." aa
 reboot

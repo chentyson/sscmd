@@ -1,0 +1,5 @@
+rm sscmd -rf
+yum install git -y
+git clone https://github.com/chentyson/sscmd.git;cd sscmd
+./setup_sscmd.sh
+./ssopt.sh

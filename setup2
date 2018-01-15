@@ -1,0 +1,5 @@
+install_speeder.sh
+cd
+git clone https://github.com/chentyson/sscmdrun.git
+cd sscmdrun
+./run.sh
