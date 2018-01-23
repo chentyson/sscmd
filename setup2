@@ -1,1 +1,21 @@
-ssh root@$1 "cd;cd sscmd;./install_speeder.sh;cd;rm sscmdrun -rf;git clone https://github.com/chentyson/sscmdrun.git;cd sscmdrun;mv config_demo.py config.py;sed -i 's/19j3.boosoo.cn/$2/g' config.py;./usrcp $2;./run.sh"
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+    echo "USAGE1: setup2 <newserver-name>"
+    echo "USAGE2: setup2 <newserver-name> <copyserver-ip>"
+    exit 1
+fi
+
+cd
+cd sscmd
+./install_speeder.sh
+cd
+rm sscmdrun -rf
+git clone https://github.com/chentyson/sscmdrun.git
+cd sscmdrun
+mv config_demo.py config.py
+sed -i 's/19j3.boosoo.cn/$1/g' config.py
+if [ $# -ge 2 ]; then
+    ./usrcp $2
+fi
+./run.sh
