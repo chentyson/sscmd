@@ -14,7 +14,7 @@ rm sscmdrun -rf
 git clone https://github.com/chentyson/sscmdrun.git
 cd sscmdrun
 mv config_demo.py config.py
-sed -i 's/19j3.boosoo.cn/$1/g' config.py
+sed -i "s/19j3.boosoo.cn/$1/g" config.py
 if [ $# -ge 2 ]; then
     ./usrcp $2
 fi
