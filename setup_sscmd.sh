@@ -66,5 +66,5 @@ firewall-cmd --reload
 
 yum install net-tools -y
 yum install screen -y
-
+yum install epel-release -y   #so can install nginx
 timedatectl set-timezone 'Asia/Shanghai'
