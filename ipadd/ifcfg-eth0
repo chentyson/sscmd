@@ -1,0 +1,6 @@
+DEVICE=eth0:1
+onboot=yes
+BOOTPROTO=static
+IPADDR=#ip
+NETMASK=#mask
+GATEWAY=#gateway
