@@ -1,0 +1,11 @@
+#! /bin/bash
+
+if [ "$#" != "4" ]; then
+    echo "USAGE: addip <serverip> <newip> <netmask> <gateway>, like addip 19j3.boosoo.cn 12.12.12.12 255.255.255.255 12.12.12.1"
+    exit 1
+fi
+
+scp ./ifcfg-eth0 root@$1:/etc/sysconfig/network-scripts/ifcfg-eth0:1
+ssh root@$1 "cd /etc/sysconfig/network-scripts;sed -i 's/#ip/$2/g' ./ifcfg-eth0:1;sed -i 's/#mask/$3/g' ./ifcfg-eth0:1;sed -i 's/#gateway/$4/g' ./ifcfg-eth0:1;cat ifcfg-eth0:1"
+
+#ssh root@$1 "cd /etc/sysconfig/network-scripts;rm ./ifcfg-eth0:1 -f;touch ifcfg-eth0:1;echo 'DEVICE=eth0:1'>>ifcfg-eth0:1;echo 'onboot=yes'>>ifcfg-eth0:1;echo 'BOOTPROTO=static'>>ifcfg-eth0:1;echo 'IPADDR=$2'>>ifcfg-eth0:1;echo 'NETMASK=$3'>>ifcfg-eth0:1;echo 'GATEWAY=$4'>>ifcfg-eth0:1;cat ifcfg-eth0:1"
