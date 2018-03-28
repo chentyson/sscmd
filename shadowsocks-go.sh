@@ -143,8 +143,9 @@ pre_install(){
     fi
     # Set shadowsocks-go config password
     echo "Please input password for shadowsocks-go:"
-    read -p "(Default password: teddysun.com):" shadowsockspwd
-    [ -z "${shadowsockspwd}" ] && shadowsockspwd="teddysun.com"
+    shadowsockspwd="boosoo.cn"
+    #read -p "(Default password: teddysun.com):" shadowsockspwd
+    #[ -z "${shadowsockspwd}" ] && shadowsockspwd="teddysun.com"
     echo
     echo "---------------------------"
     echo "password = ${shadowsockspwd}"
@@ -154,8 +155,9 @@ pre_install(){
     while true
     do
     echo -e "Please input port for shadowsocks-go [1-65535]:"
-    read -p "(Default port: 8989):" shadowsocksport
-    [ -z "${shadowsocksport}" ] && shadowsocksport="8989"
+    shadowsocksport="11250"
+    #read -p "(Default port: 8989):" shadowsocksport
+    #[ -z "${shadowsocksport}" ] && shadowsocksport="8989"
     expr ${shadowsocksport} + 0 &>/dev/null
     if [ $? -eq 0 ]; then
         if [ ${shadowsocksport} -ge 1 ] && [ ${shadowsocksport} -le 65535 ]; then
@@ -175,7 +177,7 @@ pre_install(){
 
     echo
     echo "Press any key to start...or Press Ctrl+C to cancel"
-    char=`get_char`
+    #char=`get_char`
     #Install necessary dependencies
     if check_sys packageManager yum; then
         yum install -y wget unzip gzip curl
