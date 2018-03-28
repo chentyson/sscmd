@@ -69,7 +69,7 @@ sysctl -p
 #install server-speeder
 #replace centos7 kernal
 #update linux-firmware
-yum update
+yum update -y
 yum install linux-firmware.noarch -y
 #install new kernal
 yum install grubby -y
