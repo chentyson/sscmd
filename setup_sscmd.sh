@@ -25,9 +25,9 @@ cd ..
 
 #intall new pip
 yum remove python-pip -y
-wget https://bootstrap.pypa.io/get-pip.py
-python get-pip.py
-
+#wget https://bootstrap.pypa.io/get-pip.py
+#python get-pip.py
+yum install python-pip -y
 #install git
 yum install git -y
 
@@ -45,9 +45,9 @@ pip install django==1.9.4
 
 #install supervisor
 pip install supervisor
-cp supervisord.conf /etc/ -f
+\cp supervisord.conf /etc/ -f
 #supervisord -c /etc/supervisord.conf
-cp supervisord.service /etc/systemd/system/ -f
+\cp supervisord.service /etc/systemd/system/ -f
 systemctl enable supervisord.service
 systemctl restart supervisord.service
 supervisorctl status
