@@ -26,8 +26,8 @@ cd ..
 #intall new pip
 yum remove python-pip -y
 #wget https://bootstrap.pypa.io/get-pip.py
-#python get-pip.py
-yum install python-pip -y
+python get-pip.py
+#yum install python-pip -y
 #install git
 yum install git -y
 
