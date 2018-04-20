@@ -29,7 +29,7 @@ yum remove python-pip -y
 python get-pip.py
 #yum install python-pip -y
 #install git
-yum install git -y
+#yum install git -y
 
 #install twisted
 git clone https://github.com/twisted/twisted.git
