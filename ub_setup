@@ -1,0 +1,5 @@
+#scp ./authorized_keys root@$1:~/
+#ssh ubuntu@$1 "mkdir .ssh;mv ./authorized_keys ./.ssh/"
+scp ./setup1 ubuntu@$1:~/setup1
+scp ./setup2 ubuntu@$1:~/setup2
+ssh ubuntu@$1
