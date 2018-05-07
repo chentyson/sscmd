@@ -1,12 +1,12 @@
 #install ss-go
-#chmod +x shadowsocks-go.sh
-#./shadowsocks-go.sh 2>&1 | tee shadowsocks-go.log
-#/etc/init.d/shadowsocks stop
-#chmod -x /etc/init.d/shadowsocks
-#cp ./config.json /etc/shadowsocks/config.json
+chmod +x shadowsocks-go.sh
+./shadowsocks-go.sh 2>&1 | tee shadowsocks-go.log
+/etc/init.d/shadowsocks stop
+chmod -x /etc/init.d/shadowsocks
+cp ./config.json /etc/shadowsocks/config.json
 
 #download new python
-#wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tar.xz
+wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tar.xz
 tar -xvf Python-2.7.13.tar.xz
 
 #install gcc and required packages
@@ -27,7 +27,7 @@ cd ..
 
 #intall new pip
 apt remove python-pip -y
-wget https://bootstrap.pypa.io/get-pip.py
+#wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 
 #install git

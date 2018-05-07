@@ -1,0 +1,6 @@
+rm sscmd -rf
+apt install git -y
+git clone https://github.com/chentyson/sscmd.git
+cd sscmd
+./ub_setup_sscmd.sh
+./ub_ssopt.sh
