@@ -1,7 +1,7 @@
 apt install epel-release -y   #so can install nginx
 apt install nginx -y
 cp ./nginx.conf /etc/nginx/nginx.conf
-cp ./nginx.service /usr/lib/systemd/system/nginx.service
+cp ./nginx.service lib/systemd/system/nginx.service
 systemctl daemon-reload
 systemctl stop supervisord
 systemctl disable supervisord
