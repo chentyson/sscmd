@@ -44,6 +44,9 @@ sed -i '$a net.ipv4.tcp_keepalive_time = 1200' /etc/sysctl.conf
 sed -i '/net.ipv4.ip_local_port_range = 10000 65000/d' /etc/sysctl.conf
 sed -i '$a net.ipv4.ip_local_port_range = 10000 65000' /etc/sysctl.conf
 
+sed -i '/net.ipv4.ip_local_reserved_ports/d' /etc/sysctl.conf
+sed -i '$a net.ipv4.ip_local_reserved_ports = 11000-11999,31000-31999' /etc/sysctl.conf
+
 sed -i '/net.ipv4.tcp_max_syn_backlog = 8192/d' /etc/sysctl.conf
 sed -i '$a net.ipv4.tcp_max_syn_backlog = 8192' /etc/sysctl.conf
 
