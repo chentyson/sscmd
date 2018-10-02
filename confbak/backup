@@ -106,12 +106,6 @@ if [ ! -d "./eam" ];then
 fi
 scp root@eam.vip.boosoo.cn:/etc/shadowsocks/*.* eam/
 
-echo "lktools.........."
-if [ ! -d "./lktools" ];then
-   mkdir lktools
-fi
-scp root@lktools.vip.boosoo.cn:/etc/shadowsocks/*.* lktools/
-
 echo "jinwang.........."
 if [ ! -d "./jinwang" ];then
    mkdir jinwang
