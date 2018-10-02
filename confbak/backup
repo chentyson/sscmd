@@ -1,0 +1,120 @@
+echo "19j.........."
+if [ ! -d "./j" ];then
+   mkdir j
+fi
+scp root@19j.boosoo.cn:/etc/shadowsocks/*.* j/
+
+echo "19j2.........."
+if [ ! -d "./j2" ];then
+   mkdir j2
+fi
+scp root@19j2.boosoo.cn:/etc/shadowsocks/*.* j2/
+
+echo "19j3.........."
+if [ ! -d "./j3" ];then
+   mkdir j3
+fi
+scp root@19j3.boosoo.cn:/etc/shadowsocks/*.* j3/
+
+echo "19j4.........."
+if [ ! -d "./j4" ];then
+   mkdir j4
+fi
+scp root@19j4.boosoo.cn:/etc/shadowsocks/*.* j4/
+
+echo "19u.........."
+if [ ! -d "./u" ];then
+   mkdir u
+fi
+scp root@19u.boosoo.cn:/etc/shadowsocks/*.* u/
+
+echo "19u2.........."
+if [ ! -d "./u2" ];then
+   mkdir u2
+fi
+scp root@19u2.boosoo.cn:/etc/shadowsocks/*.* u2/
+
+echo "19u3.........."
+if [ ! -d "./u3" ];then
+   mkdir u3
+fi
+scp root@19u3.boosoo.cn:/etc/shadowsocks/*.* u3/
+
+echo "19u4.........."
+if [ ! -d "./u4" ];then
+   mkdir u4
+fi
+scp root@19u4.boosoo.cn:/etc/shadowsocks/*.* u4/
+
+echo "19u5.........."
+if [ ! -d "./u5" ];then
+   mkdir u5
+fi
+scp root@19u5.boosoo.cn:/etc/shadowsocks/*.* u5/
+
+echo "19u6.........."
+if [ ! -d "./u6" ];then
+   mkdir u6
+fi
+scp root@19u6.boosoo.cn:/etc/shadowsocks/*.* u6/
+
+echo "de1.........."
+if [ ! -d "./de1" ];then
+   mkdir de1
+fi
+scp root@de1.boosoo.cn:/etc/shadowsocks/*.* de1/
+
+echo "ru1.........."
+if [ ! -d "./ru1" ];then
+   mkdir ru1
+fi
+scp root@ru1.boosoo.cn:/etc/shadowsocks/*.* ru1/
+
+echo "h2.........."
+if [ ! -d "./h2" ];then
+   mkdir h2
+fi
+scp root@h2.boosoo.cn:/etc/shadowsocks/*.* h2/
+
+echo "cx1d.........."
+if [ ! -d "./cx1d" ];then
+   mkdir cx1d
+fi
+scp root@cx1d.boosoo.cn:/etc/shadowsocks/*.* cx1d/
+
+echo "cx2d.........."
+if [ ! -d "./cx2d" ];then
+   mkdir cx2d
+fi
+scp root@cx2d.boosoo.cn:/etc/shadowsocks/*.* cx2d/
+
+echo "cx1ud.........."
+if [ ! -d "./cx1ud" ];then
+   mkdir cx1ud
+fi
+scp root@cx1ud.boosoo.cn:/etc/shadowsocks/*.* cx1ud/
+
+echo "yawoo.........."
+if [ ! -d "./yawoo" ];then
+   mkdir yawoo
+fi
+scp root@yawoo.vip.boosoo.cn:/etc/shadowsocks/*.* yawoo/
+
+echo "eam.........."
+if [ ! -d "./eam" ];then
+   mkdir eam
+fi
+scp root@eam.vip.boosoo.cn:/etc/shadowsocks/*.* eam/
+
+echo "lktools.........."
+if [ ! -d "./lktools" ];then
+   mkdir lktools
+fi
+scp root@lktools.vip.boosoo.cn:/etc/shadowsocks/*.* lktools/
+
+echo "jinwang.........."
+if [ ! -d "./jinwang" ];then
+   mkdir jinwang
+fi
+scp root@jinwang.vip.boosoo.cn:/etc/shadowsocks/*.* jinwang/
+
