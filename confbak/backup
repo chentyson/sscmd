@@ -1,62 +1,65 @@
-echo "19j.........."
-if [ ! -d "./j" ];then
-   mkdir j
-fi
-scp root@19j.boosoo.cn:/etc/shadowsocks/*.* j/
+mkdir $(date +%y%m%d_%H%m)
+cd $(date +%y%m%d_%H%m)
 
-echo "19j2.........."
-if [ ! -d "./j2" ];then
-   mkdir j2
+echo "jd1.........."
+if [ ! -d "./jd1" ];then
+   mkdir jd1
 fi
-scp root@19j2.boosoo.cn:/etc/shadowsocks/*.* j2/
+scp root@jd1.boosoo.cn:/etc/shadowsocks/*.* jd1/
 
-echo "19j3.........."
-if [ ! -d "./j3" ];then
-   mkdir j3
+echo "jd2.........."
+if [ ! -d "./jd2" ];then
+   mkdir jd2
 fi
-scp root@19j3.boosoo.cn:/etc/shadowsocks/*.* j3/
+scp root@jd2.boosoo.cn:/etc/shadowsocks/*.* jd2/
 
-echo "19j4.........."
-if [ ! -d "./j4" ];then
-   mkdir j4
+echo "jd3.........."
+if [ ! -d "./jd3" ];then
+   mkdir jd3
 fi
-scp root@19j4.boosoo.cn:/etc/shadowsocks/*.* j4/
+scp root@jd3.boosoo.cn:/etc/shadowsocks/*.* jd3/
 
-echo "19u.........."
+echo "jd4.........."
+if [ ! -d "./jd4" ];then
+   mkdir jd4
+fi
+scp root@jd4.boosoo.cn:/etc/shadowsocks/*.* jd4/
+
+echo "ud1.........."
 if [ ! -d "./u" ];then
-   mkdir u
+   mkdir ud1
 fi
-scp root@19u.boosoo.cn:/etc/shadowsocks/*.* u/
+scp root@ud1.boosoo.cn:/etc/shadowsocks/*.* ud1/
 
-echo "19u2.........."
-if [ ! -d "./u2" ];then
-   mkdir u2
+echo "ud2.........."
+if [ ! -d "./ud2" ];then
+   mkdir ud2
 fi
-scp root@19u2.boosoo.cn:/etc/shadowsocks/*.* u2/
+scp root@ud2.boosoo.cn:/etc/shadowsocks/*.* ud2/
 
-echo "19u3.........."
-if [ ! -d "./u3" ];then
-   mkdir u3
+echo "ud3.........."
+if [ ! -d "./ud3" ];then
+   mkdir ud3
 fi
-scp root@19u3.boosoo.cn:/etc/shadowsocks/*.* u3/
+scp root@ud3.boosoo.cn:/etc/shadowsocks/*.* ud3/
 
-echo "19u4.........."
-if [ ! -d "./u4" ];then
-   mkdir u4
+echo "ud4.........."
+if [ ! -d "./ud4" ];then
+   mkdir ud4
 fi
-scp root@19u4.boosoo.cn:/etc/shadowsocks/*.* u4/
+scp root@ud4.boosoo.cn:/etc/shadowsocks/*.* ud4/
 
-echo "19u5.........."
-if [ ! -d "./u5" ];then
-   mkdir u5
+echo "ud5.........."
+if [ ! -d "./ud5" ];then
+   mkdir ud5
 fi
-scp root@19u5.boosoo.cn:/etc/shadowsocks/*.* u5/
+scp root@ud5.boosoo.cn:/etc/shadowsocks/*.* ud5/
 
-echo "19u6.........."
-if [ ! -d "./u6" ];then
-   mkdir u6
+echo "ud6.........."
+if [ ! -d "./ud6" ];then
+   mkdir ud6
 fi
-scp root@19u6.boosoo.cn:/etc/shadowsocks/*.* u6/
+scp root@ud6.boosoo.cn:/etc/shadowsocks/*.* ud6/
 
 echo "de1.........."
 if [ ! -d "./de1" ];then
@@ -70,11 +73,30 @@ if [ ! -d "./ru1" ];then
 fi
 scp root@ru1.boosoo.cn:/etc/shadowsocks/*.* ru1/
 
-echo "h2.........."
-if [ ! -d "./h2" ];then
-   mkdir h2
+echo "ph1.........."
+if [ ! -d "./ph1" ];then
+   mkdir ph1
 fi
-scp root@h2.boosoo.cn:/etc/shadowsocks/*.* h2/
+scp root@ph1.boosoo.cn:/etc/shadowsocks/*.* ph1/
+scp root@ph1.boosoo.cn:/etc/nginx/nginx.conf ph1/
+
+echo "ph2.........."
+if [ ! -d "./ph2" ];then
+   mkdir ph2
+fi
+scp root@ph2.boosoo.cn:/etc/nginx/nginx.conf ph2/
+
+echo "pcx.........."
+if [ ! -d "./pcx" ];then
+   mkdir pcx
+fi
+scp root@pcx.boosoo.cn:/etc/nginx/nginx.conf pcx/
+
+echo "pcx2.........."
+if [ ! -d "./pcx2" ];then
+   mkdir pcx2
+fi
+scp root@pcx2.boosoo.cn:/etc/nginx/nginx.conf pcx2/
 
 echo "cx1d.........."
 if [ ! -d "./cx1d" ];then
