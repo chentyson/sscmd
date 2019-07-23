@@ -61,17 +61,47 @@ if [ ! -d "./ud6" ];then
 fi
 scp root@ud6.boosoo.cn:/etc/shadowsocks/*.* ud6/
 
+echo "hk1.........."
+if [ ! -d "./hk1" ];then
+   mkdir hk1
+fi
+scp root@hk1.boosoo.cn:/etc/shadowsocks/*.* hk1/
+
+echo "hk2.........."
+if [ ! -d "./hk2" ];then
+   mkdir hk2
+fi
+scp root@hk2.boosoo.cn:/etc/shadowsocks/*.* hk2/
+
+echo "sg1.........."
+if [ ! -d "./sg1" ];then
+   mkdir sg1
+fi
+scp root@sg1.boosoo.cn:/etc/shadowsocks/*.* sg1/
+
 echo "de1.........."
 if [ ! -d "./de1" ];then
    mkdir de1
 fi
 scp root@de1.boosoo.cn:/etc/shadowsocks/*.* de1/
 
+echo "fr1.........."
+if [ ! -d "./fr1" ];then
+   mkdir fr1
+fi
+scp root@fr1.boosoo.cn:/etc/shadowsocks/*.* fr1/
+
 echo "ru1.........."
 if [ ! -d "./ru1" ];then
    mkdir ru1
 fi
 scp root@ru1.boosoo.cn:/etc/shadowsocks/*.* ru1/
+
+echo "it1.........."
+if [ ! -d "./it1" ];then
+   mkdir it1
+fi
+scp root@it1.boosoo.cn:/etc/shadowsocks/*.* it1/
 
 echo "ph1.........."
 if [ ! -d "./ph1" ];then
@@ -104,23 +134,17 @@ if [ ! -d "./cx1d" ];then
 fi
 scp root@cx1d.boosoo.cn:/etc/shadowsocks/*.* cx1d/
 
-echo "cx2d.........."
-if [ ! -d "./cx2d" ];then
-   mkdir cx2d
+echo "pcx12.........."
+if [ ! -d "./pcx12" ];then
+   mkdir pcx12
 fi
-scp root@cx2d.boosoo.cn:/etc/shadowsocks/*.* cx2d/
+scp root@pcx12.boosoo.cn:/etc/shadowsocks/*.* pcx12/
 
 echo "cx1ud.........."
 if [ ! -d "./cx1ud" ];then
    mkdir cx1ud
 fi
 scp root@cx1ud.boosoo.cn:/etc/shadowsocks/*.* cx1ud/
-
-echo "yawoo.........."
-if [ ! -d "./yawoo" ];then
-   mkdir yawoo
-fi
-scp root@yawoo.vip.boosoo.cn:/etc/shadowsocks/*.* yawoo/
 
 echo "eam.........."
 if [ ! -d "./eam" ];then
@@ -134,3 +158,14 @@ if [ ! -d "./jinwang" ];then
 fi
 scp root@jinwang.vip.boosoo.cn:/etc/shadowsocks/*.* jinwang/
 
+echo "pj1d.........."
+if [ ! -d "./pj1d" ];then
+   mkdir pj1d
+fi
+scp root@pj1d.boosoo.cn:/etc/shadowsocks/*.* pj1d/
+
+echo "pj2d.........."
+if [ ! -d "./pj2d" ];then
+   mkdir pj2d
+fi
+scp root@pj2d.boosoo.cn:/etc/shadowsocks/*.* pj2d/
