@@ -45,13 +45,16 @@ pip install django==1.9.4
 
 #install supervisor
 pip install supervisor
-\cp supervisord.conf /etc/ -f
+#\cp supervisord.conf /etc/ -f
 #supervisord -c /etc/supervisord.conf
 \cp supervisord.service /etc/systemd/system/ -f
 systemctl enable supervisord.service
 systemctl restart supervisord.service
 supervisorctl status
 #supervisorctl restart ss
+\cp ss.service /etc/systemd/system/ -f
+systemctl enable ss.service
+systemctl restart ss
 
 #setup firewalld
 systemctl enable firewalld

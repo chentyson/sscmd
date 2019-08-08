@@ -1,0 +1,13 @@
+[Unit]
+Description=Daemon for power management
+
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/shadowsocks-server -c /etc/shadowsocks/config.json
+Restart=always
+RestartSec=5
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target
