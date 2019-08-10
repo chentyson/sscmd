@@ -53,8 +53,8 @@ systemctl restart supervisord.service
 supervisorctl status
 #supervisorctl restart ss
 \cp ss.service /etc/systemd/system/ -f
-systemctl enable ss.service
-systemctl restart ss
+#systemctl enable ss.service
+#systemctl restart ss
 
 #setup firewalld
 systemctl enable firewalld
