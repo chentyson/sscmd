@@ -3,7 +3,7 @@ chmod +x shadowsocks-go.sh
 ./shadowsocks-go.sh 2>&1 | tee shadowsocks-go.log
 /etc/init.d/shadowsocks stop
 chmod -x /etc/init.d/shadowsocks
-cp ./config.json /etc/shadowsocks/config.json -y
+cp ./config.json /etc/shadowsocks/config.json -f
 
 #download new python
 wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tar.xz
