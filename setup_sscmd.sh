@@ -51,6 +51,9 @@ pip install supervisor
 systemctl enable supervisord.service
 systemctl restart supervisord.service
 supervisorctl status
+\cp superkeeper.service /etc/systemd/system/ -f
+systemctl enable superkeeper.service
+systemctl restart superkeeper.service 
 #supervisorctl restart ss
 \cp ss.service /etc/systemd/system/ -f
 #systemctl enable ss.service

@@ -1,0 +1,12 @@
+[Unit]
+Description=supervisor keeper. by tyson
+After=rc-local.service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/python /root/sscmdrun/runa.py
+#SysVStartPriority=99
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
