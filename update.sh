@@ -1,3 +1,5 @@
+systemctl stop ss
+systemctl disable ss
 cd /root/sscmd
 git pull
 cd /root/sscmdrun
