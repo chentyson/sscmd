@@ -54,10 +54,6 @@ supervisorctl status
 \cp superkeeper.service /etc/systemd/system/ -f
 systemctl enable superkeeper.service
 systemctl restart superkeeper.service 
-#supervisorctl restart ss
-\cp ss.service /etc/systemd/system/ -f
-#systemctl enable ss.service
-#systemctl restart ss
 
 #setup firewalld
 systemctl enable firewalld
